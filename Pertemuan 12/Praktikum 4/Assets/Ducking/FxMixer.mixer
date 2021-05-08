@@ -1,0 +1,96 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!241 &24100000
+AudioMixerController:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: FxMixer
+  m_OutputGroup: {fileID: 243489475610045676, guid: 4e159fb606bfdb6409ddc665dc2df64f,
+    type: 2}
+  m_MasterGroup: {fileID: 24300002}
+  m_Snapshots:
+  - {fileID: 24500006}
+  m_StartSnapshot: {fileID: 24500006}
+  m_SuspendThreshold: -80
+  m_EnableSuspend: 1
+  m_UpdateMode: 0
+  m_ExposedParameters: []
+  m_AudioMixerGroupViews:
+  - guids:
+    - 98633db267f38c6489dd086f7a0b7b85
+    - 71d817a8e639e734ebea6cafcd1bc28a
+    name: View
+  m_CurrentViewIndex: 0
+  m_TargetSnapshot: {fileID: 24500006}
+--- !u!243 &24300002
+AudioMixerGroupController:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Master
+  m_AudioMixer: {fileID: 24100000}
+  m_GroupID: 98633db267f38c6489dd086f7a0b7b85
+  m_Children:
+  - {fileID: 243676689597489916}
+  m_Volume: 6ebf10116860eab4d913fcf6c979b0a0
+  m_Pitch: fc2dc6fc94a0f2244bcd8dc9241fdf18
+  m_Effects:
+  - {fileID: 24400004}
+  m_UserColorIndex: 0
+  m_Mute: 0
+  m_Solo: 0
+  m_BypassEffects: 0
+--- !u!244 &24400004
+AudioMixerEffectController:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: 
+  m_EffectID: 88cc29d5cba8e704f87a34ef449a91d3
+  m_EffectName: Attenuation
+  m_MixLevel: a8b58b833763dc3458579fcd4c3bef41
+  m_Parameters: []
+  m_SendTarget: {fileID: 0}
+  m_EnableWetMix: 0
+  m_Bypass: 0
+--- !u!245 &24500006
+AudioMixerSnapshotController:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Snapshot
+  m_AudioMixer: {fileID: 24100000}
+  m_SnapshotID: c7789de6e0ce21f4e9fc531a6768fdee
+  m_FloatValues: {}
+  m_TransitionOverrides: {}
+--- !u!243 &243676689597489916
+AudioMixerGroupController:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Bells
+  m_AudioMixer: {fileID: 24100000}
+  m_GroupID: 71d817a8e639e734ebea6cafcd1bc28a
+  m_Children: []
+  m_Volume: 6c7f28c098aadd1439811ead61c84e20
+  m_Pitch: c90bf9f336ee5ce45a08e8e9dcb1764a
+  m_Effects:
+  - {fileID: 244146473834798792}
+  m_UserColorIndex: 0
+  m_Mute: 0
+  m_Solo: 0
+  m_BypassEffects: 0
+--- !u!244 &244146473834798792
+AudioMixerEffectController:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: 
+  m_EffectID: 81d93686d984add48ac0f67a698f1bd6
+  m_EffectName: Attenuation
+  m_MixLevel: 8e05df810604bc744856746040f00ba5
+  m_Parameters: []
+  m_SendTarget: {fileID: 0}
+  m_EnableWetMix: 0
+  m_Bypass: 0
